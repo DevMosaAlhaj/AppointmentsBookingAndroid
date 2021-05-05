@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:paddingBottom="10dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="22sp"
+        android:textColor="@color/black"
+        android:text="@string/add_appointment"
+        android:gravity="center"
+        android:padding="10dp"/>
+
+
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:elevation="5dp"
+        android:hint="@string/company_name"
+        android:textColorHint="@color/black"
+        app:startIconDrawable="@drawable/corporate"
+        app:startIconTint="@color/material_orange">
+
+        <com.google.android.material.textfield.TextInputEditText
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:inputType="text"
+            android:singleLine="true"
+            android:enabled="false"
+            android:id="@+id/fragment_add_appointment_et_company_name"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:elevation="5dp"
+        android:hint="@string/appointment_date"
+        android:textColorHint="@color/black"
+        app:startIconDrawable="@drawable/appointment_tab_icon"
+        app:startIconTint="@color/material_orange">
+
+        <com.google.android.material.textfield.TextInputEditText
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:inputType="datetime"
+            android:singleLine="true"
+            android:id="@+id/fragment_add_appointment_et_date"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:elevation="5dp"
+        android:hint="@string/appointment_time"
+        android:textColorHint="@color/black"
+        app:startIconDrawable="@drawable/appointment_tab_icon"
+        app:startIconTint="@color/material_orange">
+
+        <com.google.android.material.textfield.TextInputEditText
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:inputType="datetime"
+            android:singleLine="true"
+            android:id="@+id/fragment_add_appointment_et_time"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:elevation="5dp"
+        app:counterEnabled="true"
+        app:counterMaxLength="150"
+        android:hint="@string/appointment_description"
+        android:textColorHint="@color/black"
+        app:startIconDrawable="@drawable/description"
+        app:startIconTint="@color/material_orange">
+
+        <com.google.android.material.textfield.TextInputEditText
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:inputType="textEmailAddress"
+            android:singleLine="false"
+            android:maxLength="150"
+            android:maxLines="3"
+            android:id="@+id/fragment_add_appointment_et_description"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/add_appointment"
+        android:textSize="19sp"
+        android:textAllCaps="false"
+        android:background="@drawable/app_button_background_disabled"
+        android:textColor="@color/white"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:id="@+id/fragment_add_appointment_bt_add_appointment"
+        android:enabled="false"/>
+
+
+</LinearLayout>
